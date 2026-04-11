@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reto CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr ;
+            grid-template-rows: 50px 1fr 50px;
+            grid-template-areas:
+                "header header"
+                "content sidebar"
+                "footer footer";
+            gap: 10px;
+            height: 300px;
+            border: 2px solid #333;
+            padding: 10px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #8ecae6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        main {
+            grid-area: content;
+            background-color: #219ebc;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: white;
+            padding-left: 10px;
+        }
+
+        aside {
+            grid-area: sidebar;
+            background-color: #023047;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            color: white;
+            padding-top: 10px;
+
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #ffb703;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Aquí debes agregar las reglas CSS para ajustar el posicionamiento y alineación fina */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>Header</header>
+        <main>Content</main>
+        <aside>Sidebar</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

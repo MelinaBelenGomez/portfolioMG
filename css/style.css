@@ -1,0 +1,93 @@
+
+/*Estilos generales*/
+
+.seccionesTitulo{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.textoCentrado{
+    text-align: center;
+}
+
+/* Header estilos */
+.indexHeader{
+    background-image: url(../images/headerIndexBackground.jpg);
+    background-size: cover;
+}
+
+li{
+display: inline;
+justify-content: flex-start;
+padding: 20px;
+}
+
+.indexHeaderAvatar{
+    width: 12rem;
+}
+
+*{
+font-family: "Quicksand", sans-serif;
+
+}
+
+.indexHeaderH2, .indexHeaderH3, .indexHeaderH6{
+font-family: "Quicksand", sans-serif;
+font-weight: 400;
+color: rgb(255,255,255)
+}
+
+
+.descargarCVButton{
+    background-color: rgb(230, 162, 16);
+    color: rgb(0, 0, 0);
+    border: unset;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+}
+
+a{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    color: rgb(230, 162, 16);
+}
+
+
+/*Body estilos*/
+
+.linksInicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.indexMainCard{
+    background-color: rgb(230, 162, 16);
+    border-radius: 0.5rem;
+}
+
+.item-header{
+    display: grid;
+    grid-template-columns: (auto-fit, minmax(15px, 1fr));
+    grid-template-rows: (12, auto);
+    gap: 10px;
+    background-color: lightsalmon;
+
+
+}
+
+.item{
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid #333;
+    text-align: center;
+
+}
+
+
+
+
+/*Footer estilos*/
