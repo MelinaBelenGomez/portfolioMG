@@ -16,14 +16,10 @@
     background-size: cover;
 }
 
-li{
-display: inline;
-justify-content: flex-start;
-padding: 20px;
-}
 
 .indexHeaderAvatar{
     width: 12rem;
+    
 }
 
 *{
@@ -57,7 +53,7 @@ a{
 
 /*Body estilos*/
 
-.linksInicio{
+.linksInicio li {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -71,8 +67,8 @@ a{
 
 .item-header{
     display: grid;
-    grid-template-columns: (auto-fit, minmax(15px, 1fr));
-    grid-template-rows: (12, auto);
+    grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
+    grid-template-rows: repeat(12, auto);
     gap: 10px;
     background-color: lightsalmon;
 
