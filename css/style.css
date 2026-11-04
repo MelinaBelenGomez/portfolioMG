@@ -1,133 +1,96 @@
-/*Estilos generales*/
-
-.seccionesTitulo {
-    text-align: center;
-    text-transform: uppercase;
-}
-
-
-/* Header estilos */
+/* ===== Header (mobile) ===== */
 .indexHeader {
-    background-image: url(../images/headerIndexBackground.jpg);
+    /* el degradé oscuro hace que el texto se lea mejor sobre la foto */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../images/headerIndexBackground.jpg);
     background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
     text-align: center;
-    padding: 1rem;
-
+    padding: 1.5rem 1rem 2.5rem;
 }
 
-.linksInicio {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.623);
-    position: sticky;
-    top: 0;
-    list-style-type: none;
+.headerTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.indexHeaderH1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.indexHeaderSubtitulo {
+    margin: 0.25rem 0 0;
+    font-weight: 300;
+}
+
+.linksInicio ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .linksInicioStyle {
-    color: rgb(221, 202, 29);
+    color: rgb(230, 162, 16);
+    text-decoration: none;
+}
+
+.linksInicioStyle:hover {
+    text-decoration: underline;
+}
+
+.containerAvatarYTxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 .indexHeaderAvatar {
-    width: 40%;
-    height: 40%;
+    width: 60%;
+    max-width: 14rem;
 }
 
-.indexHeaderH5 {
-    color: rgb(255, 255, 255);
-
-}
-
-
-* {
-    font-family: "Quicksand", sans-serif;
-
-}
-
-.indexHeaderH2,
-.indexHeaderH3 {
-    font-weight: 400;
-    color: rgb(255, 255, 255);
-    font-style: bold;
-    text-align: center;
+.indexHeaderTexto {
+    max-width: 32ch;
+    margin: 0;
+    line-height: 1.5;
 }
 
 
-.descargarCVButton {
-    background-color: rgb(230, 162, 16);
-    color: rgb(0, 0, 0);
-    border: unset;
-    font-size: 1rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-
-}
-
-
-
-/*Body estilos*/
-
-
-
-.indexMainCard {
-    background-color: rgb(230, 162, 16);
-    border-radius: 0.5rem;
-}
-
-.item-header {
-    display: grid;
-    grid-template-columns: (auto-fit, minmax(15px, 1fr));
-    grid-template-rows: (12, auto);
-    gap: 10px;
-    background-color: lightsalmon;
-
-
-}
-
-.item {
-    background-color: lightblue;
-    padding: 10px;
-    border: 1px solid #333;
-    text-align: center;
-
-}
-
-
-
-/*Footer estilos*/
-
-
-
-
+/* ===== Pantallas grandes ===== */
 @media (min-width: 600px) {
-    /*Estilos generales*/
-
-    .textoCentrado {
-        text-align: center;
+    .indexHeader {
+        text-align: left;
+        padding: 1.5rem 3rem 3rem;
     }
 
-    /* Header estilos */
-    .indexHeader {
-        background-image: url(../images/headerIndexBackground.jpg);
-        background-size: cover;
+    .headerTop {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    /* las rayitas | entre los links, como en tu dibujo */
+    .linksInicio li + li::before {
+        content: "|";
+        margin-right: 1rem;
+        color: rgb(255, 255, 255);
+    }
+
+    .containerAvatarYTxt {
+        align-items: flex-start;
     }
 
     .indexHeaderAvatar {
         width: 12rem;
-
-    }
-
-    a {
-        font-family: "Quicksand", sans-serif;
-        font-weight: 300;
-        color: rgb(230, 162, 16);
-    }
-
-    .linksInicio li {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        gap: 1rem;
     }
 }
