@@ -1,8 +1,18 @@
-/* ===== Header (mobile) ===== */
+* {
+    font-family: "Quicksand", sans-serif;
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
+}
+
+/* ===== Header (mobile) ===== */
+.indexHeader {
     /* el degradé oscuro hace que el texto se lea mejor sobre la foto */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(/images/headerIndexBackground.jpg);
+    url(/images/headerIndexBackground.jpg);
+    min-height: 100dvh;/* cobertura total del fondo*/
     background-size: cover;
     background-position: center;
     color: rgb(255, 255, 255);
@@ -71,6 +81,7 @@ body {
     .indexHeader {
         text-align: left;
         padding: 1.5rem 3rem 3rem;
+        min-height: 100vh;
     }
 
     .headerTop {
@@ -79,7 +90,6 @@ body {
         align-items: flex-start;
     }
 
-    /* las rayitas | entre los links, como en tu dibujo */
     .linksInicio li + li::before {
         content: "|";
         margin-right: 1rem;
