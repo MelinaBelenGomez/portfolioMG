@@ -1,6 +1,6 @@
 function Header() {
     return (
-        <header class="indexHeader">
+        <header className="indexHeader">
             <div class="headerTop">
                 <div class="headerTitulos">
                     <h1 class="indexHeaderH1">Melina Gomez</h1>
@@ -9,6 +9,7 @@ function Header() {
 
                 <nav class="linksInicio">
                     <ul>
+                        <li><a class="linksInicioStyle" href="#inicio">Inicio</a></li>
                         <li><a class="linksInicioStyle" href="#sobre-mi">Sobre mí</a></li>
                         <li><a class="linksInicioStyle" href="#proyectos">Proyectos</a></li>
                         <li><a class="linksInicioStyle" href="#contacto">Contacto</a></li>
@@ -16,11 +17,6 @@ function Header() {
                 </nav>
             </div>
 
-            <div class="containerAvatarYTxt">
-                <img class="indexHeaderAvatar" src="./images/melinaGomezLogo.png" alt="Ilustración de Melina Gomez"></img>
-                <p class="indexHeaderTexto">Soy desarrolladora web y construyo soluciones adaptables y funcionales con
-                    código limpio.</p>
-            </div>
         </header>
     )
 }
