@@ -1,8 +1,8 @@
 
 function SobreMi(){
-Return(
+return(
 
-<section id="sobre-mi"></section>
+<p>PRUEBA SOBRE MI </p>
 
 )
 
