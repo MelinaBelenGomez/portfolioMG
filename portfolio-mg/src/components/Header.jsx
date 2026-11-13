@@ -7,7 +7,7 @@ function Header() {
                     <p className="indexHeaderSubtitulo">Desarrolladora Web</p>
                 </div>
 
-                <nav class="linksInicio">
+                <nav className="linksInicio">
                     <ul>
                         <li><a className="linksInicioStyle" href="#inicio">Inicio</a></li>
                         <li><a className="linksInicioStyle" href="#sobre-mi">Sobre mí</a></li>

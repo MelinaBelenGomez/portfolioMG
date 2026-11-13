@@ -5,11 +5,12 @@ function App() {
 
   return (
 
-    <>
+    <div className="portada">
       <Header />
       <Inicio />
+    </div>
 
-    </>
+
 
   )
 }

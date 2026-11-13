@@ -1,0 +1,141 @@
+$amarillo: rgb(230, 162, 16);
+$blanco: rgb(255, 255, 255);
+
+* {
+    font-family: "Quicksand", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Fondo grande*/
+.portada {
+    @media (min-width: 600px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url(/images/headerIndexBackground.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+    }
+}
+
+.indexHeader {
+    /* el degradé oscuro hace que el texto se lea mejor sobre la foto */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.514)),
+        url(/images/Background_mobile.png);
+    background-size: cover;
+    background-position: center;
+    color: $blanco;
+    text-align: center;
+    padding: 1.5rem 1rem 2.5rem;
+
+    @media (min-width: 600px) {
+        background-image: none;
+        text-align: left;
+        padding: 1.5rem 3rem 3rem;
+    }
+
+}
+
+
+.inicioBackground {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.336)),
+        url(/images/tecno1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100dvh;
+
+    @media (min-width: 600px) {
+        background-image: none;
+        min-height: auto;
+    }
+}
+
+.headerTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+
+.indexHeaderH1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.indexHeaderSubtitulo {
+    margin: 0.25rem 0 0;
+    font-weight: 300;
+}
+
+.linksInicio ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    @media (min-width: 600px) {
+        li+li::before {
+            content: "|";
+            margin-right: 1rem;
+            color: $blanco;
+        }
+    }
+}
+
+
+.linksInicioStyle {
+    color: $amarillo;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
+.containerAvatarYTxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    @media (min-width: 600px) {
+        align-items: flex-start;
+    }
+}
+
+
+.indexHeaderAvatar {
+    width: 60%;
+    max-width: 14rem;
+    padding: .5rem;
+
+
+    @media (min-width: 600px) {
+        width: 12rem;
+
+    }
+}
+
+.indexHeaderTexto {
+    max-width: 32ch;
+    margin: 0;
+    line-height: 1.5;
+    color: $blanco;
+    padding: 1rem;
+
+}
