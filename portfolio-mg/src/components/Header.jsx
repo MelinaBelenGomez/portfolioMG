@@ -9,14 +9,13 @@ function Header() {
 
                 <nav className="linksInicio">
                     <ul>
-                        <li><a className="linksInicioStyle" href="#inicio">Inicio</a></li>
-                        <li><a className="linksInicioStyle" href="#sobre-mi">Sobre mí</a></li>
+                        <li><a className="linksInicioStyle" href="#sobreMi">Sobre Mí</a></li>
                         <li><a className="linksInicioStyle" href="#proyectos">Proyectos</a></li>
                         <li><a className="linksInicioStyle" href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
-
+ 
         </header>
     )
 }

@@ -1,5 +1,5 @@
 import Header from './components/Header'
-import Inicio from './components/Inicio'
+import SobreMi from './components/SobreMi'
 
 function App() {
 
@@ -7,7 +7,7 @@ function App() {
 
     <div className="portada">
       <Header />
-      <Inicio />
+      <SobreMi />
     </div>
 
 

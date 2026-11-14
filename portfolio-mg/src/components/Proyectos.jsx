@@ -3,9 +3,9 @@ function Proyectos() {
 
     return (
 
-        <section id="Proyectos">
+        <section id="proyectos">
 
-            
+
         </section>
     )
 }
