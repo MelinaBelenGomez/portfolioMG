@@ -1,21 +1,33 @@
 import Header from './components/Header'
 import SobreMi from './components/SobreMi'
 import Proyectos from './components/Proyectos'
+import Contacto from './components/Contacto'
 import { useState } from 'react'
 
 function App() {
 
-  const [mostrarProyectos, setMostrarProyectos] = useState(false)
+  const [seccionActiva, setSeccionActiva] = useState('sobreMi')
 
   return (
     <>
       <div className="portada">
-        <Header />
-        <SobreMi />
+        <Header cambiarSeccion={setSeccionActiva} />
+
+        <div className={seccionActiva === 'sobreMi' ? '' : 'oculta'}>
+          <SobreMi />
+        </div>
+
+        <div className={seccionActiva === 'proyectos' ? '' : 'oculta'}>
+          <Proyectos />
+        </div>
+
+        <div className={seccionActiva === 'contacto' ? '' : 'oculta'}>
+          <Contacto />
+        </div>
 
       </div>
 
-      {mostrarProyectos && <Proyectos />}
+
 
 
     </>

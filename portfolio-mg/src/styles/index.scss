@@ -1,9 +1,14 @@
-$amarillo: rgb(230, 162, 16);
-$blanco: rgb(255, 255, 255);
+@use 'variables' as *;
 
 * {
     font-family: "Quicksand", sans-serif;
     box-sizing: border-box;
+}
+
+.oculta {
+    @media (min-width: 600px) {
+        display: none;
+    }
 }
 
 body {

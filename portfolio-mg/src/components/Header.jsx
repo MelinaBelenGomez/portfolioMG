@@ -1,4 +1,4 @@
-function Header() {
+function Header({ cambiarSeccion }) {
     return (
         <header className="indexHeader">
             <div className="headerTop">
@@ -9,13 +9,13 @@ function Header() {
 
                 <nav className="linksInicio">
                     <ul>
-                        <li><a className="linksInicioStyle" href="#sobreMi">Sobre Mí</a></li>
-                        <li><a className="linksInicioStyle" href="#proyectos">Proyectos</a></li>
-                        <li><a className="linksInicioStyle" href="#contacto">Contacto</a></li>
+                        <li><a className="linksInicioStyle" href="#sobreMi" onClick={() => cambiarSeccion('sobreMi')}>Sobre Mí</a></li>
+                        <li><a className="linksInicioStyle" href="#proyectos" onClick={() => cambiarSeccion('proyectos')}>Proyectos</a></li>
+                        <li><a className="linksInicioStyle" href="#contacto" onClick={() => cambiarSeccion('contacto')}>Contacto</a></li>
                     </ul>
                 </nav>
             </div>
- 
+
         </header>
     )
 }
