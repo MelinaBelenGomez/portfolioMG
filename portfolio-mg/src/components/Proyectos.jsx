@@ -5,7 +5,7 @@ function Proyectos() {
 
     const imagenesFrozen = [
         { src: '/images/carruselProyectos/inicioFrz.png', alt: 'Pantalla de inicio de Frozen' },
-        { src: '/images/carruselProyectos/inicioFrz.png', alt: 'Pantalla de inicio de Frozen' },
+        { src: '/images/carruselProyectos/test-carrusel.jpg', alt: 'test' },
     ]
 
 

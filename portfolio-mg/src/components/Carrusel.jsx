@@ -9,15 +9,15 @@ function Carrusel({ imagenes }) {
         }
         else { setIndice(indice + 1) }
     }
+
+
+    return (
+
+        <div className="carrusel">
+            <button onClick={irASiguiente}>←</button>
+            <img src={imagenes[indice].src} alt={imagenes[indice].alt} />
+            <button onClick={irASiguiente}>→</button>
+        </div>
+    )
 }
-
-return (
-
-    <div className="carrusel">
-        <button>←</button>
-        <img src={imagenes[indice].src} alt={imagenes[indice].alt} />
-        <button>→</button>
-    </div>
-)
-
 export default Carrusel
