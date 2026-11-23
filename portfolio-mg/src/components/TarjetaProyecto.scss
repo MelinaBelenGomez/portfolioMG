@@ -1,0 +1,86 @@
+@use '../styles/variables' as *;
+
+.contenedorProyecto {
+    display: flex;
+    flex-direction: column;
+    background-image: radial-gradient($azul, $negro);
+    border: 1px solid $borde;
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+
+.imagenProyecto{
+    position:relative;
+}
+
+.etiquetaDesarrollo{
+    position:absolute;
+    top: 0.75rem;
+    right: .75rem;
+    background: $amarillo;
+    color: $negro;
+    font-size: .85rem;
+    font-weight: 600;
+    padding: .3rem .7rem;
+    border-radius: 6px;
+
+}
+
+.contenidoProyecto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+    padding: 1.25rem;
+
+    h3 {
+        margin: 0;
+        font-size: 1.25rem;
+    }
+
+    p{
+        margin:0;
+        color: $texto-suave;
+        line-height: 1.6;
+    }
+
+}
+
+.tecnologias {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    li {
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.25rem 0.6rem;
+        border: 1px solid $borde;
+        border-radius: 6px;
+        background: $fondo-etiquetas;
+    }
+}
+
+.linksProyecto {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid $borde;
+    display: flex;
+    gap: 1rem;
+
+    a {
+        display: flex;
+        color: $texto-suave;
+
+        &:hover {
+            color: $amarillo;
+        }
+    }
+}
+
+

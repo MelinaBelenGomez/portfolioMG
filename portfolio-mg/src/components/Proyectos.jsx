@@ -1,26 +1,29 @@
 import './Proyectos.scss'
-import Carrusel from './Carrusel'
+import TarjetaProyecto from './TarjetaProyecto'
+import proyectos from '../data/proyectos'
 
 function Proyectos() {
-
-    const imagenesFrozen = [
-        { src: '/images/carruselProyectos/inicioFrz.png', alt: 'Pantalla de inicio de Frozen' },
-        { src: '/images/carruselProyectos/test-carrusel.jpg', alt: 'test' },
-    ]
 
 
     return (
 
         <section id="proyectos">
+            <h2>Mis proyectos</h2>
 
             <div className="contenedorGrandeProyectos">
-                <h2>Mis proyectos</h2>
-                <article className="contenedorProyecto">
-                    <Carrusel imagenes={imagenesFrozen} />
-                    <h3>Frozen</h3>
-                    <p>React.js, JavaScript, HTML5, CSS3, Java, Spring Boot, Python, Supabase </p>
-                    <p>FROZEN es una aplicación web desarrollada para gestionar y optimizar los procesos de producción de una PyME de frutas y hortalizas. Permite administrar materias primas, planificar órdenes de producción, realizar el seguimiento de sus etapas y consultar indicadores para facilitar la toma de decisiones.</p>
-                </article>
+                {proyectos.map((proyecto) => (
+                    <TarjetaProyecto
+                        key={proyecto.id}
+                        titulo={proyecto.titulo}
+                        tecnologias={proyecto.tecnologias}
+                        descripcion={proyecto.descripcion}
+                        imagenes={proyecto.imagenes}
+                        enDesarrollo={proyecto.enDesarrollo}
+                        demo={proyecto.demo}
+                        repositorio={proyecto.repositorio}
+                    />
+                ))}
+
 
 
             </div>

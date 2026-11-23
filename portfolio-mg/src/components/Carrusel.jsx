@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './Carrusel.scss'
 
 function Carrusel({ imagenes }) {
     const [indice, setIndice] = useState(0)
@@ -10,11 +11,18 @@ function Carrusel({ imagenes }) {
         else { setIndice(indice + 1) }
     }
 
+    function irAAnterior() {
+        if (indice === 0) {
+            setIndice(imagenes.length - 1)
+        }
+        else { setIndice(indice - 1) }
+    }
+
 
     return (
 
         <div className="carrusel">
-            <button onClick={irASiguiente}>←</button>
+            <button onClick={irAAnterior}>←</button>
             <img src={imagenes[indice].src} alt={imagenes[indice].alt} />
             <button onClick={irASiguiente}>→</button>
         </div>
