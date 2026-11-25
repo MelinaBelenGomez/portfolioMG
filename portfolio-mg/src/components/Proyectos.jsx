@@ -9,6 +9,7 @@ function Proyectos() {
 
         <section id="proyectos">
             <h2>Mis proyectos</h2>
+            <p> A continuación presento proyectos desarrollados con diferentes tecnologías, aplicando conocimientos de programación, diseño y resolución de problemas.</p>
 
             <div className="contenedorGrandeProyectos">
                 {proyectos.map((proyecto) => (
