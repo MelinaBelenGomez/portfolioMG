@@ -1,0 +1,48 @@
+@use '../styles/variables' as *;
+
+
+.sobreMiBackground {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.336)),
+        url(/images/tecno1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100dvh;
+
+    @media (min-width: 600px) {
+        background-image: none;
+        min-height: auto;
+    }
+}
+
+.containerAvatarYTxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    @media (min-width: 600px) {
+        align-items: flex-start;
+    }
+}
+
+
+.indexHeaderAvatar {
+    width: 60%;
+    max-width: 14rem;
+    padding: .5rem;
+
+
+    @media (min-width: 600px) {
+        width: 12rem;
+
+    }
+}
+
+.txtSobreMi {
+    max-width: 32ch;
+    margin: 0;
+    line-height: 1.5;
+    color: $blanco;
+    padding: 1rem;
+
+}
