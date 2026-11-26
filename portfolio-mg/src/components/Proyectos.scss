@@ -3,6 +3,11 @@
 #proyectos {
     color: $blanco;
     padding: 1rem;
+    background: $azul;
+
+    @media (min-width: 600px) {
+        background: none;
+    }
 
     h2 {
         text-align: center;

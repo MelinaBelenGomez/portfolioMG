@@ -14,7 +14,20 @@
     }
 }
 
+
+.containerSobreMi {
+    @media (min-width: 600px) {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 0px;
+    }
+}
+
+
+
 .containerAvatarYTxt {
+    grid-area: 1 / 1 / 2 / 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,11 +51,45 @@
     }
 }
 
-.txtSobreMi {
+.divTrabajo,
+.divEducacion {
+    background: $azul-transparente;
+    border: 1px solid $borde;
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.txtSobreMi,
+.txtWork {
     max-width: 32ch;
     margin: 0;
     line-height: 1.5;
     color: $blanco;
     padding: 1rem;
 
+}
+
+
+.containerMiExperiencia {
+    grid-area: 1 / 2 / 2 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+    }
+
+}
+
+.imgTrabajo,
+.imgEducacion {
+    width: 10rem;
+    height: auto;
 }
