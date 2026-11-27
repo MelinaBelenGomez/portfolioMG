@@ -15,7 +15,7 @@ function App() {
         <Header cambiarSeccion={setSeccionActiva} />
 
         <div className={seccionActiva === 'sobreMi' ? '' : 'oculta'}>
-          <SobreMi cambiarSeccion={setSeccionActiva}/>
+          <SobreMi cambiarSeccion={setSeccionActiva} />
         </div>
 
         <div className={seccionActiva === 'proyectos' ? '' : 'oculta'}>
@@ -25,6 +25,9 @@ function App() {
         <div className={seccionActiva === 'contacto' ? '' : 'oculta'}>
           <Contacto />
         </div>
+
+        <Footer />
+
 
       </div>
 
