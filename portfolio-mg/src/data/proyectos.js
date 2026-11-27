@@ -62,7 +62,7 @@ const proyectos = [
 
         enDesarrollo: false,
         demo: 'https://peperinacafe.netlify.app/',
-        repositorio: 'https://github.com/MelinaBelenGomez/SimulacionEmpresaEnvios_Amazing_JAVA'
+        repositorio: 'https://github.com/MelinaBelenGomez/peperinaCafe'
     },
 
 

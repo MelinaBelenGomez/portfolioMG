@@ -1,6 +1,6 @@
 import './SobreMi.scss'
 
-function SobreMi() {
+function SobreMi({ cambiarSeccion }) {
     return (
         <section id="sobreMi" className="sobreMiBackground">
 
@@ -47,8 +47,9 @@ function SobreMi() {
 
                         <a className="descargarCvBtn" href="/cv/CV - Gomez Melina_.pdf" download="CV-Melina-Gomez.pdf">Descargar CV </a>
 
-
                     </div>
+                    <a className="descargarCvBtn btnContacto" href="#contacto" onClick={() => cambiarSeccion('contacto')}>Contactame!</a>
+                    
                 </div>
 
 

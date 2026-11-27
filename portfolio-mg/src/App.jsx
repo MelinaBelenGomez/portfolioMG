@@ -3,6 +3,7 @@ import SobreMi from './components/SobreMi'
 import Proyectos from './components/Proyectos'
 import Contacto from './components/Contacto'
 import { useState } from 'react'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
         <Header cambiarSeccion={setSeccionActiva} />
 
         <div className={seccionActiva === 'sobreMi' ? '' : 'oculta'}>
-          <SobreMi />
+          <SobreMi cambiarSeccion={setSeccionActiva}/>
         </div>
 
         <div className={seccionActiva === 'proyectos' ? '' : 'oculta'}>
